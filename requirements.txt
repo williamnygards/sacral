@@ -1,0 +1,12 @@
+langchain-chroma
+retriever
+langchain-ollama
+ollama
+requests
+tqdm
+beautifulsoup4
+logging  # (Built-in, no need to install)
+typing-extensions  # (For typing support in older Python versions)
+python-dateutil  # (For datetime parsing)
+pathlib  # (Built-in in Python 3.4+, no need to install)
+argparse  # (Built-in, no need to install)
