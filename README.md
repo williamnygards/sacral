@@ -27,4 +27,5 @@ Choose an embedding model and replace the "embed_model" to the embed model chose
 Run the python script.
 
 # How to run main
-Choose LLM, embedding, path to chromadb
+Choose LLM, embedding, path to chromadb.
+Run python script to query the LLM and Embedding combination.
