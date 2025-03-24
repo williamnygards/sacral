@@ -6,6 +6,7 @@
 3. Run main
 Also:
 You need to fetch LLM and embedding models from the ollama website. For our project we used:
+
 Embeddings:
 mxbai-embed-large
 Definity/snowflake-arctic-embed-l-v2.0-q8_0
