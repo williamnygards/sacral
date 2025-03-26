@@ -16,13 +16,13 @@ def load_courses():
         metadata["course_name"] = record.get("name").lower()
         return metadata
     
-    path = "./MDU_crawler/mdu_data/course/courses.jsonl"
+    path = "REPLACE_WITH_PATH_TO_SCRAPED_JSON_DATA"
     loader = JSONLoader(file_path=path, json_lines=True, text_content=False, jq_schema=".", metadata_func=metadata_func)
     docs = loader.load()
 
-    embed_model = OllamaEmbeddings(model="mxbai-embed-large")
+    embed_model = OllamaEmbeddings(model="REPLACE_WITH_EMBEDDING_MODEL")
     
-    vector_store = Chroma(embedding_function=embed_model, persist_directory="./chroma")
+    vector_store = Chroma(embedding_function=embed_model, persist_directory="./chroma") # Change persist_directory if you want another path for ChromaDB
     vector_store.add_documents(docs)
     print("Courses sucessfully added to DB")
 
@@ -32,13 +32,13 @@ def load_programs():
         metadata["program_name"] = record.get("name").lower()
         return metadata
     
-    path = "./MDU_crawler/mdu_data/program/programs.jsonl"
+    path = "REPLACE_WITH_PATH_TO_SCRAPED_JSON_DATA"
     loader = JSONLoader(file_path=path, json_lines=True, text_content=False, jq_schema=".", metadata_func=metadata_func)
     docs = loader.load()
 
-    embed_model = OllamaEmbeddings(model="mxbai-embed-large")
+    embed_model = OllamaEmbeddings(model="REPLACE_WITH_EMBEDDING_MODEL")
     
-    vector_store = Chroma(embedding_function=embed_model, persist_directory="./chroma")
+    vector_store = Chroma(embedding_function=embed_model, persist_directory="./chroma") # Change persist_directory if you want another path for ChromaDB
     vector_store.add_documents(docs)
     print("Programs sucessfully added to DB")
 
