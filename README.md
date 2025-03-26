@@ -17,6 +17,7 @@ llama3.1:8b
 deepseek-r1:7b
 
 # How to run crawler:
+Run the crawler using a terminal by the following command
 ``
 python mdu_unified_crawler.py --course-range 25000 33000 --program-range 500 2000 --no-delay  --verbose
 ``
