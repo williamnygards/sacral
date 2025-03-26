@@ -3,13 +3,6 @@ from langchain_chroma import Chroma
 from langchain_community.document_loaders import JSONLoader
 from uuid import uuid4
 
-
-class DBHandler:
-    def __init__(self, file_path):
-        self.file_path = file_path
-
-
-
 def load_courses():
     def metadata_func(record: dict, metadata: dict) -> dict:
         metadata["course_code"] = record.get("kurskod").lower()
