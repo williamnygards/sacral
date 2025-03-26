@@ -6,7 +6,7 @@ import ollama
 
 
 class MDUBot:
-    def __init__(self, model_name="llama3.1:8b", embed_model_name="mxbai-embed-large", persist_path="./chroma"):
+    def __init__(self, model_name="REPLACE_WITH_LLM", embed_model_name="REPLACE_WITH_EMBEDDING_MODEL", persist_path="REPLACE_PATH_TO_CHROMADB"):
         self.model = model_name
         self.embed_model = OllamaEmbeddings(model=embed_model_name)
         self.db = Chroma(embedding_function=self.embed_model, persist_directory=persist_path)
