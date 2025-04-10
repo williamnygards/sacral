@@ -1,5 +1,9 @@
 # DVA318 SACRAL
 
+# Important note 10/04/2025
+In main file, on line 42: Checkout "ollama.chat" instead of "ollama.generate" -- chat functions allows for functionality in conversations whereas generate generates an answer.
+
+
 # Instructions
 1. Run crawler
 2. Run populate database
